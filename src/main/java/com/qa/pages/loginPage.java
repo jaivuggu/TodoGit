@@ -59,10 +59,18 @@ public HomePage login()  {
 	
 	DatePickup.click();
 	
+	// this is to findout calender process
 	
 	
 	return new HomePage();
 }
+
+public void searchpageadd() {
+	
+	System.out.println("this is to findout calender process");
+	
+}
+
 }
 
 
