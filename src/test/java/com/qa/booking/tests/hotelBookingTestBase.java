@@ -1,4 +1,4 @@
- package com.qa.booking.test;
+ package com.qa.booking.tests;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import hotelUtil.testUtil;
+import com.qa.bookingutil.testUtil;
 
 public class hotelBookingTestBase {
 	

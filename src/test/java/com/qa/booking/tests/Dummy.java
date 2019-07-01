@@ -1,4 +1,4 @@
-package com.qa.booking.test;
+package com.qa.booking.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
