@@ -1,0 +1,920 @@
+package com.qa.pages;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.Assert;
+
+import com.qa.base.TestBase;
+
+public class SearchResultsPage extends TestBase {
+
+	// final WebDriver driver;
+	Wait<WebDriver> wait;
+	JavascriptExecutor jse;
+	Actions builder;
+
+
+
+	@FindBy(css = "input[name='newDeclShipRef']")
+	WebElement shipment_Reference;
+
+	@FindBy(xpath = "//td[contains(text(),'Save')]")
+	WebElement save_btn;
+
+	@FindBy(xpath = "//input[@name='searchDeclRef']")
+	WebElement declarationSearchReference;
+
+	@FindBy(xpath = "//td/input[@name='searchDeclJuris']/parent::td/following-sibling::td/a")
+	WebElement declarationSearchJurisdiction;
+
+	@FindBy(xpath = "//span/b[contains(text(),'Jurisdiction')]/../following-sibling::table//tr//td/a")
+	WebElement jurisdiction_Combo;
+
+	@FindBy(xpath = "//span/b[contains(text(),'Procedure')]/../following-sibling::table//tr//td/a")
+	WebElement procedure_Combo;
+
+	@FindBy(xpath = "//td[contains(text(),'Status') and contains(@onfocus,'bDeclBtnCI_IED1')]")
+	WebElement status_btn_OnNewDeclaration;
+
+	@FindBy(name = "DeclHdrStatus")
+	WebElement status_Text;
+
+	@FindBy(css = "div[eventproxy='mwDeclCI_WDC1_closeButton'][class='imgButton']")
+	WebElement statusModel_Cls_Btn;
+
+	@FindBy(css = "div[eventproxy='isc_PickListMenu_2'][class='scrollingMenu']")
+	WebElement jurisdiction_pickList;
+
+	@FindBy(xpath = "//*[text()='IE']/parent::div")
+	WebElement jurisdiction_combo_input;
+
+	@FindBy(xpath = "//span[contains(text(),'Procedure')]/parent::*//td/div/parent::td/following-sibling::td/a")
+	WebElement declarationSearchProcedure;
+
+	@FindBy(css = "div[eventproxy='isc_PickListMenu_3'][class='scrollingMenu']")
+	WebElement procedure_pickList;
+
+	@FindBy(css = "div[eventproxy='isc_PickListMenu_0'][class='scrollingMenu']")
+	WebElement procedure_pickList1;
+
+
+	@FindBy(xpath = "//*[text()='NCTSDEP']/parent::div")
+	WebElement procedure_combo_input;
+
+	@FindBy(xpath = "//td[text()='Search']")
+	WebElement declarationSearchBtn;
+
+	@FindBy(xpath = "//td[contains(text(),'New')]")
+	WebElement new_btn;
+
+	@FindBy(xpath = "//td[@class='tabTitleSelected' and contains(@onfocus,'tQuery_DQA1_1_label')]//td[@class='tabTitleSelected']")
+	WebElement selectedTab;
+
+	@FindBy(xpath = "//tr[@role='listitem']/td[1]/div")
+	List<WebElement> gridFristRowElements;
+
+	@FindBy(xpath = "//td[text()='Declaration header']")
+	WebElement declarationHeaderLabel;
+
+	@FindBy(xpath = "//td[contains(text(),'Refresh')]")
+	WebElement Refresh_btn;
+
+	@FindBy(xpath = "//td[text()='Search Results']")
+	WebElement SearchResults_Tab;
+
+	// fill up the fields elements
+
+	@FindBy(name = "DeclUcr")
+	WebElement transitUcr;
+
+	@FindBy(name = "DeclComRef")
+	WebElement DeclComRef;
+
+	@FindBy(name = "DeclMrn")
+	WebElement DeclMrn;
+
+	@FindBy(name = "DeclValue")
+	WebElement DeclValue;
+
+	@FindBy(name = "DeclValueCurr")
+	WebElement DeclValueCurr;
+
+	@FindBy(name = "DeclTotalPcs")
+	WebElement totalPcs;
+
+	@FindBy(name = "DeclTotalGross")
+	WebElement totalGross;
+
+	@FindBy(name = "DeclTotalNet")
+	WebElement netWeight;
+
+	@FindBy(name = "DeclDeclType")
+	WebElement type1;
+
+	@FindBy(name = "DeclOffDep")
+	WebElement departure;
+
+	@FindBy(name = "DeclCtryDisp")
+	WebElement country15;
+
+	@FindBy(name = "DeclCtryDest")
+	WebElement country17;
+
+	@FindBy(name = "DeclInlandTportMode")
+	WebElement inland;
+
+	@FindBy(name = "DeclReprName")
+	WebElement representative;
+
+	@FindBy(name = "DeclReprCap")
+	WebElement capacity;
+
+	@FindBy(name = "DeclDeclSec")
+	WebElement security;
+
+	@FindBy(name = "DeclControlResult")
+	WebElement control;
+
+	@FindBy(name = "DeclDateLimit_dateTextField")
+	WebElement DateLimit;
+
+	@FindBy(xpath = "//input[@name='DeclPrincName']/parent::td/following-sibling::td/a")
+	WebElement prinicipalCombo;
+
+	//@FindBy(xpath = "//input[@name='DeclCnorName']/parent::td/following-sibling::td/a")
+	//WebElement consignorCombo;
+	
+	//
+	
+	@FindBy(xpath = "//label[contains(text(),'Consignor[2]')]/ancestor::td/descendant::td[1]//img[1]")
+	WebElement consignorCombo;
+	
+	
+	
+
+	@FindBy(xpath = "//input[@name='DeclCneeName']/parent::td/following-sibling::td/a")
+	WebElement CneeNamCombo8;
+
+	@FindBy(xpath = "//input[@name='DeclCarrName']/parent::td/following-sibling::td/a")
+	WebElement carrierNameCombo;
+
+	@FindBy(xpath = "//input[@name='DeclSecCnorName']/parent::td/following-sibling::td/a")
+	WebElement securitySecCnorNameCombo;
+
+	@FindBy(xpath = "//input[@name='DeclSecCneeName']/parent::td/following-sibling::td/a")
+	WebElement securityConsigineeCombo;
+
+	@FindBy(xpath = "//div[@*='fDeclPrincSection_IED1' and @class='normal']//div[contains(text(),'Principal')]/parent::*/following-sibling::*//a")
+	WebElement prinicipalSearch;
+
+	@FindBy(xpath = "//div[contains(text(),'Consignor')]/parent::*/following-sibling::*//a")
+	WebElement consignorSearch;
+
+	@FindBy(xpath = "//div[contains(text(),'Consignee')]/parent::*/following-sibling::*//a")
+	WebElement consigneeSearch;
+
+	@FindBy(xpath = "//div[contains(text(),'Carrier')]/parent::*/following-sibling::*//a")
+	WebElement carrierSearch;
+
+	@FindBy(xpath = "//div[contains(text(),'Secure Cnor')]/parent::*/following-sibling::*//a")
+	WebElement secureCnorSearch;
+
+	@FindBy(xpath = "//div[contains(text(),'Secur Cnee')]/parent::*/following-sibling::*//a")
+	WebElement securCneeSearch;
+
+//	@FindBy(xpath = "//div[@*='mwLookup_LGCIA1']//table[@class='listTable']//tr[@role='listitem']/td[1]) ")
+//	WebElement firstOption;
+
+//	@FindBy(xpath = "//div[@*='windowBody']/descendant::nobr[1]")
+//	WebElement firstOption;
+
+
+	@FindBy(xpath = "//div[@*='windowBody']/descendant::tr[td[div[nobr[1]]]]")
+	WebElement firstOption;
+
+
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclHdrOffTransit_IED') and @class='gridBody']")
+	WebElement transitOfficeCodeGrid;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclHdrSeal_IED') and @class='gridBody']")
+	WebElement serialIdentifierGrid;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'mDeclHdrOffTransit_IED') and @class='menuMain']//tr/td/div")
+	WebElement rightClickOptions;
+
+	@FindBy(xpath = "//*[@eventproxy='isc_DynamicForm_0']//a")
+	WebElement addNewTransitOfficeSearch;
+
+	@FindBy(xpath = "(//div[@*='lgLookupSearch_LCC1_body']//table[@class='listTable']//tr[@role='listitem']/td[1])[1]")
+	WebElement addNewTransitOffice;
+
+	@FindBy(xpath = "//input[@name='TransitOfficeArrivalTime_dateTextField']")
+	WebElement transitCodeDate;
+
+	@FindBy(xpath = "//td[contains(text(),'Items') and @class='imgSectionHeaderTitleclosed']")
+	WebElement items;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclItems_IED') and @class='gridBody']")
+	WebElement ItemsGrid;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'mDeclItems_IED') and @class='menuMain']//tr/td/div")
+	WebElement itemsRightClickOptions;
+
+	@FindBy(name = "GoodsItemDeclType")
+	WebElement itemType;
+
+	@FindBy(name = "GoodsItemCommodityCode")
+	WebElement itemCommodity;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclItems_IED') and @class='gridBody']//div[@role='presentation']//nobr[img]/img")
+	WebElement itemSearchIcon;
+
+//	@FindBy(xpath = "(//div[contains(@eventproxy,'lgDeclItems_IED') and @class='gridBody']//div[@role='presentation']//img[3]")
+//	WebElement itemSearchIcon;
+
+	@FindBy(name = "DeclItemCommodityCode")
+	WebElement goodsItemDetailsCommodity;
+
+	@FindBy(name = "GoodsItemCnorZip")
+	WebElement GoodsItemCnorZip;
+
+	@FindBy(name = "GoodsItemCnorCtry")
+	WebElement GoodsItemCnorCtry;
+
+	@FindBy(name = "GoodsItemCneeZip")
+	WebElement GoodsItemCneeZip;
+
+	@FindBy(name = "GoodsItemCneeCtry")
+	WebElement GoodsItemCneeCtry;
+
+	@FindBy(name = "DeclItemCtryDisp")
+	WebElement DeclItemCtryDisp;
+
+	@FindBy(name = "DeclItemCtryDest")
+	WebElement DeclItemCtryDest;
+
+	@FindBy(xpath = "//*[contains(@eventproxy,'lgDeclItemPack_IED') and @class='listGrid']")
+	WebElement packageGrid;
+
+	@FindBy(xpath = "//*[contains(@eventproxy,'mDeclItemPack_IED') and @class='menuMain']//table//div")
+	WebElement packageGridRightClickOptions;
+
+	@FindBy(name = "PackageType")
+	WebElement PackageType;
+
+	@FindBy(name = "PackageMarks")
+	WebElement PackageMarks;
+
+	@FindBy(xpath = "//td[contains(text(),'Previous')]")
+	WebElement previousTab;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclItemPrevDoc_IED') and @class='gridBody']")
+	WebElement previousGrid;
+
+	@FindBy(xpath = "//*[contains(@eventproxy,'mDeclItemPrevDoc_IED') and @class='menuMain']//table//div")
+	WebElement previousGridRightClickOptions;
+
+	@FindBy(name = "DocumentType")
+	WebElement DocumentType;
+
+	@FindBy(name = "DocumentInformation")
+	WebElement DocumentInformation;
+
+	@FindBy(xpath = "//td[contains(text(),'Guarantees')]")
+	WebElement guaranteesItem;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgDeclGuars_IED') and @class='gridBody']")
+	WebElement guaranteesGrid;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'mDeclGuars_IED') and @class='menuMain']//table//div")
+	WebElement guaranteesGridRightClickOptions;
+
+	@FindBy(name = "GuaranteeType")
+	WebElement GuaranteeType;
+
+	@FindBy(name = "GuaranteeReference")
+	WebElement GuaranteeReference;
+
+	@FindBy(name = "GuaranteeAccessCode")
+	WebElement GuaranteeAccessCode;
+
+	@FindBy(xpath = "//td[contains(text(),'Save')]")
+	WebElement save_Btn;
+
+	@FindBy(css = "div[eventproxy='mwError_WER1_closeButton'][class='imgButton']")
+	WebElement invalidErrorsModelCloseBtn;
+
+
+
+	//@FindBy(xpath="//div[@id='isc_15E']")
+	//WebElement invalidErrorsModelCloseBtn1;
+
+	
+	
+	
+	
+	@FindBy(xpath="//div[@eventproxy='mwError_WER1_closeButton']")
+	WebElement invalidErrorsModelCloseBtn1;
+	
+	
+	@FindBy(xpath = "//td[contains(text(),'History')]")
+	WebElement historyItem;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'lgHist_IED')]//tr//td[2]/div")
+	WebElement lastestActionInHistory;
+
+	@FindBy(name = "searchDeclDateFrom_dateTextField")
+	WebElement fromDate;
+
+	@FindBy(name = "searchDeclDateTo_dateTextField")
+	WebElement toDate;
+
+	@FindBy(xpath = "//div[contains(@eventproxy,'bDeclBtnValidate_IED')]//td[contains(text(),'Validate')]")
+	WebElement validate_btn;
+
+	
+	@FindBy(xpath="//div[@id='isc_153']//img")
+	WebElement closeBTN1;
+
+	public SearchResultsPage() {
+
+		PageFactory.initElements(driver, this);
+
+	}
+
+// All first scenario:1	
+
+	public void click_On_New() throws Exception {
+
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(90))
+				.pollingEvery(Duration.ofSeconds(9)).ignoring(Exception.class);
+	 jse = (JavascriptExecutor) driver;
+	builder = new Actions(driver);
+		
+		wait.until(ExpectedConditions.visibilityOf(new_btn));
+		
+		
+		
+		
+		
+
+		
+		
+		
+		int flag=0,wait=0;
+		while(flag==0 && wait<60){
+		    try{
+		    	jse.executeScript("arguments[0].scrollIntoView()", new_btn);
+		        driver.findElement(By.xpath("//tr[td[contains(text(),'New')]]")).click(); 
+		        flag=1;
+		    }
+		    catch(Exception e){
+		        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		        wait++;
+		    }
+		 }
+
+		
+		
+		
+		
+		
+		
+		//Thread.sleep(5000);
+		//jse.executeScript("arguments[0].scrollIntoView()", new_btn);
+		//new_btn.click(); // click on new button modal pop-up
+	}
+
+	public void createDeclaration(String shipMentRef, String Jurisdiction, String procedure) throws Exception {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[name='newDeclShipRef']")));
+		shipment_Reference.click();
+		shipment_Reference.sendKeys(shipMentRef);
+		enterInputInJurisdictionCombo();
+		enterInputInProcedureCombo();
+		clickOnSave();
+	}
+
+	public void enterInputInJurisdictionCombo() throws Exception {
+
+
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(90))
+				.pollingEvery(Duration.ofSeconds(20)).ignoring(Exception.class);
+
+		//jse = (JavascriptExecutor) driver;
+		//builder = new Actions(driver);
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//span/b[contains(text(),'Jurisdiction')]/../following-sibling::table//tr//td/a/img")));
+
+		//// span[@id='isc_7X']
+		for (int i = 0; i < 15; i++) {
+			builder.moveToElement(jurisdiction_Combo).click(jurisdiction_Combo).build().perform();
+			boolean isDisplayed = false;
+		//	Thread.sleep(2000);
+			try {
+				isDisplayed = jurisdiction_pickList.isDisplayed();
+			} catch (Exception e) {
+				isDisplayed = false;
+			}
+			if (isDisplayed)
+				break;
+		}
+		//Thread.sleep(5000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='IE']")));
+		builder.moveToElement(jurisdiction_combo_input).click(jurisdiction_combo_input).build().perform();
+	}
+
+	public void enterInputInProcedureCombo() throws Exception {
+
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5)).ignoring(Exception.class);
+		//jse = (JavascriptExecutor) driver;
+		//builder = new Actions(driver);
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//span/b[contains(text(),'Procedure')]/../following-sibling::table//tr//td/a/img")));
+		for (int i = 0; i < 15; i++) {
+			builder.moveToElement(procedure_Combo).click(procedure_Combo).build().perform();
+			boolean isDisplayed = false;
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[eventproxy='isc_PickListMenu_3'][class='scrollingMenu']")));
+			try {
+				isDisplayed = procedure_pickList.isDisplayed();
+			} catch (Exception e) {
+				isDisplayed = false;
+			}
+			System.out.println(isDisplayed);
+			if (isDisplayed)
+				break;
+		}
+		//Thread.sleep(5000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='NCTSDEP']/parent::div")));
+		jse.executeScript("arguments[0].scrollIntoView()", procedure_combo_input);
+		builder.moveToElement(procedure_combo_input).click(procedure_combo_input).build().perform();
+		//Thread.sleep(5000);
+	}
+
+	public void clickOnSave() throws InterruptedException {
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tr[td[contains(text(),'Save')]]")));
+		
+		Thread.sleep(3000);
+		
+		builder.moveToElement(save_btn).click(save_btn).build().perform();
+		
+		
+		//driver.findElement(By.xpath("//tr[td[contains(text(),'Save')]]")).click();
+		
+	}
+
+	public String clickAndGet_Status(WebDriver driver) throws Exception {
+		String statusOfDeclaration = null;
+		wait.until(ExpectedConditions.visibilityOf(status_btn_OnNewDeclaration));
+		Thread.sleep(1000);
+		builder.moveToElement(status_btn_OnNewDeclaration).click(status_btn_OnNewDeclaration).build().perform();
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(status_Text));
+
+		statusOfDeclaration = status_Text.getAttribute("value");
+		System.out.println("status1 text : " + statusOfDeclaration);
+
+		return statusOfDeclaration;
+
+	}
+
+	public void closeStatusModel(WebDriver driver) {
+		wait.until(ExpectedConditions.visibilityOf(statusModel_Cls_Btn));
+		statusModel_Cls_Btn.click();
+	}
+
+	public String getTextOfSelectedTab(WebDriver driver) throws Exception {
+		String selectedTabText = null;
+		wait.until(ExpectedConditions.visibilityOf(selectedTab));
+		selectedTabText = selectedTab.getText();
+		return selectedTabText;
+	}
+
+	public void clickOnSearchResults(WebDriver driver) throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(SearchResults_Tab));
+		builder.moveToElement(SearchResults_Tab).click(SearchResults_Tab).build().perform();
+	}
+
+	public void clickOnRefreshBtn(WebDriver driver) throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Refresh_btn));
+		builder.moveToElement(Refresh_btn).click(Refresh_btn).build().perform();
+	}
+
+	public String getTextOfLatestRecordInSearchResultsGrid(WebDriver driver) throws Exception {
+		String latestRecordText = null;
+		wait.until(ExpectedConditions.visibilityOf(gridFristRowElements.get(0)));
+		latestRecordText = gridFristRowElements.get(0).getText();
+		return latestRecordText;
+	}
+
+// All Scenarios for 2
+
+	public void searchForCreatedDeclaration(String reference, String Jurisdiction, String procedure) throws Exception {
+
+
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(90))
+				.pollingEvery(Duration.ofSeconds(10)).ignoring(Exception.class);
+
+		jse = (JavascriptExecutor) driver;
+		builder = new Actions(driver);
+
+		wait.until(ExpectedConditions.visibilityOf(declarationSearchReference));
+		declarationSearchReference.clear();
+		declarationSearchReference.sendKeys(reference);
+
+		//Thread.sleep(3000);
+		enterInputInJurisdictionCombo1();
+		enterInputInProcedureCombo1();
+		clickOnSearchBtn();
+	}
+
+	public void enterInputInJurisdictionCombo1() throws Exception {
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5)).ignoring(Exception.class);
+		jse = (JavascriptExecutor) driver;
+		builder = new Actions(driver);
+		wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//td/input[@name='searchDeclJuris']/parent::td/following-sibling::td/a")));
+		for (int i = 0; i < 15; i++) {
+			Thread.sleep(3000);
+			builder.moveToElement(declarationSearchJurisdiction).click(declarationSearchJurisdiction).build().perform();
+			boolean isDisplayed = false;
+
+			try {
+				isDisplayed = jurisdiction_pickList.isDisplayed();
+			} catch (Exception e) {
+				isDisplayed = false;
+			}
+			if (isDisplayed)
+				break;
+		}
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='IE']")));
+		builder.moveToElement(jurisdiction_combo_input).click(jurisdiction_combo_input).build().perform();
+	}
+
+	public void enterInputInProcedureCombo1() throws Exception {
+		wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//span[contains(text(),'Procedure')]/parent::*//td/div/parent::td/following-sibling::td/a")));
+
+		for (int i = 0; i < 15; i++) {
+			builder.moveToElement(declarationSearchProcedure).click(declarationSearchProcedure).build().perform();
+			boolean isDisplayed = false;
+
+			try {
+				isDisplayed = procedure_pickList1.isDisplayed();
+			} catch (Exception e) {
+				isDisplayed = false;
+
+			}
+
+			System.out.println(isDisplayed);
+			if (isDisplayed)
+				break;
+		}
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='NCTSDEP']/parent::div")));
+		jse.executeScript("arguments[0].scrollIntoView()", procedure_combo_input);
+		builder.moveToElement(procedure_combo_input).click(procedure_combo_input).build().perform();
+		Thread.sleep(5000);
+	}
+
+	public void clickOnSearchBtn() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(declarationSearchBtn));
+		builder.moveToElement(declarationSearchBtn).click(declarationSearchBtn).build().perform();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr[@role='listitem']/td[1]/div")));
+	}
+
+	public void doubleClickOnSearchResultsElement(WebDriver driver, int numOfEle) throws Exception {
+		Thread.sleep(10000);
+		wait.until(ExpectedConditions
+				.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath("//tr[@role='listitem']/td[1]/div"))));
+		jse.executeScript("arguments[0].scrollIntoView()", gridFristRowElements.get(0));
+
+		builder.moveToElement(gridFristRowElements.get(numOfEle));
+
+		builder.doubleClick(gridFristRowElements.get(0)).build().perform();
+		builder.doubleClick(gridFristRowElements.get(0)).build().perform();
+
+		wait.until(ExpectedConditions.visibilityOf(declarationHeaderLabel));
+	}
+
+	public void fillTheDeclarationForm() throws Exception {
+		enterTextValue(transitUcr, "JAI121");
+		enterTextValue(DeclComRef,"abcd");
+		//enterTextValue(DeclMrn,"abcd");
+		enterTextValue(DeclValue,"1");
+		enterTextValue(DeclValueCurr,"EUR");
+		enterTextValue(totalGross, "300");
+		enterTextValue(netWeight, "200");
+		enterTextValue(type1, "T-");
+		enterTextValue(departure, "IE003151");
+		enterTextValue(country15, "IE");
+		enterTextValue(country17, "AD");
+		enterTextValue(inland, "1");
+		enterTextValue(representative, "JAI");
+		enterTextValue(capacity, "18");
+		enterTextValue(security, "1");
+		enterTextValue(control, "1");
+		enterTextValue(DateLimit, "26/10/2019");
+		enterCombo(prinicipalCombo, prinicipalSearch, firstOption);
+		enterCombo1(consignorCombo, consignorSearch, firstOption);
+		enterCombo(CneeNamCombo8, consigneeSearch, firstOption);
+		enterCombo(carrierNameCombo, carrierSearch, firstOption);
+		enterCombo(securitySecCnorNameCombo, secureCnorSearch, firstOption);
+		enterCombo(securityConsigineeCombo, securCneeSearch, firstOption);
+		rightClickTransitOfficeGrid(transitOfficeCodeGrid, rightClickOptions, addNewTransitOfficeSearch,
+				addNewTransitOffice, transitCodeDate, "26/10/2019");
+		clickOnItem(driver);
+		rightClickOnGrid(ItemsGrid, itemsRightClickOptions);
+		enterTextValue(itemCommodity, "01012100");
+		enterTextValue(GoodsItemCnorZip, "12345");
+		enterTextValue(GoodsItemCnorCtry, "IE");
+		doubleClickOnElement(itemSearchIcon);
+		rightClickOnGrid(packageGrid, packageGridRightClickOptions);
+		enterTextValue(PackageType, "PK");
+		enterTextValue(PackageMarks, "As Mentioned");
+		clickOnPreviousTab();
+		rightClickOnGrid(previousGrid, previousGridRightClickOptions);
+		enterTextValue(DocumentType, "T2");
+		enterTextValue(DocumentInformation, "automation document");
+		clickOnGurantees();
+		rightClickOnGrid(guaranteesGrid, guaranteesGridRightClickOptions);
+		enterTextValue(GuaranteeType, "1");
+
+	}
+
+	public void enterTextValue(WebElement ele1, String inPutText) throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(ele1));
+		ele1.clear();
+		
+		ele1.sendKeys(inPutText);
+	}
+
+	public void enterCombo(WebElement ele1, WebElement ele2, WebElement ele3) throws Exception {
+		Thread.sleep(3000);
+		jse.executeScript("arguments[0].scrollIntoView()", ele1);
+		wait.until(ExpectedConditions.visibilityOf(ele1));
+		jse.executeScript("arguments[0].scrollIntoView()", ele1);
+		Thread.sleep(3000);
+		ele1.click();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(ele2));
+		jse.executeScript("arguments[0].scrollIntoView()", ele2);
+		Thread.sleep(3000);
+		ele2.click();
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(ele3));
+		jse.executeScript("arguments[0].scrollIntoView()", ele3);
+		builder.moveToElement(ele3).doubleClick(ele3).build().perform();
+		//builder.doubleClick(ele3).build().perform();
+		Thread.sleep(3000);
+
+		jse.executeScript("arguments[0].scrollIntoView()", ele1);
+
+		System.out.println("****************************");
+		boolean b = false;
+		try {
+			b = ele2.isDisplayed();
+			if (b) {
+				Thread.sleep(3000);
+				wait.until(ExpectedConditions.visibilityOf(ele1));
+				ele1.click();
+			}
+		} catch (Exception e) {
+			b = false;
+		}
+	}
+
+	
+	public void enterCombo1(WebElement ele1, WebElement ele2, WebElement ele3) throws Exception {
+		Thread.sleep(3000);
+		System.out.println("****************************");
+		wait.until(ExpectedConditions.visibilityOf(ele1));
+		jse.executeScript("arguments[0].scrollIntoView()", ele1);
+		Thread.sleep(3000);
+		ele1.click();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(ele2));
+		jse.executeScript("arguments[0].scrollIntoView()", ele2);
+		Thread.sleep(3000);
+		ele2.click();
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(ele3));
+		jse.executeScript("arguments[0].scrollIntoView()", ele3);
+		builder.moveToElement(ele3).doubleClick(ele3).build().perform();
+		//builder.doubleClick(ele3).build().perform();
+		Thread.sleep(5000);
+
+	//	jse.executeScript("arguments[0].scrollIntoView()", ele1);
+
+		
+		boolean b = false;
+		try {
+			b = ele2.isDisplayed();
+			if (b) {
+				Thread.sleep(3000);
+				wait.until(ExpectedConditions.visibilityOf(ele1));
+				jse.executeScript("arguments[0].scrollIntoView()", ele1);
+				builder.doubleClick(ele1).build().perform();
+				System.out.println("-------------------------------------------------------------");
+				
+				Thread.sleep(3000);
+				ele1.click();
+			}
+		} catch (Exception e) {
+			b = false;
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void rightClickTransitOfficeGrid(WebElement gridEle, WebElement ContextEle, WebElement searchEle,
+			WebElement firstEle, WebElement dateField, String date) throws Exception {
+		Thread.sleep(7000);
+		wait.until(ExpectedConditions.visibilityOf(gridEle));
+		jse.executeScript("arguments[0].scrollIntoView()", gridEle);
+		builder.moveToElement(gridEle).contextClick(gridEle).build().perform();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(ContextEle));
+		ContextEle.click();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(searchEle));
+		searchEle.click();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(firstEle));
+		jse.executeScript("arguments[0].scrollIntoView()", firstEle);
+		builder.moveToElement(firstEle).doubleClick(firstEle).build().perform();
+		//builder.doubleClick(firstEle).build().perform();
+		System.out.println("000000000000000000000000000000000000000000000000000000000000000000000000");
+		wait.until(ExpectedConditions.visibilityOf(dateField));
+		jse.executeScript("arguments[0].scrollIntoView()", dateField);
+		builder.moveToElement(dateField).click().build().perform();
+		Thread.sleep(5000);
+		System.out.println("000000000000000000000000000000000000000000000000000000000000000000000000");
+		dateField.sendKeys(date);
+	}
+
+	public void clickOnItem(WebDriver driver) throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(items));
+		Thread.sleep(5000);
+		jse.executeScript("arguments[0].scrollIntoView()", items);
+		items.click();
+
+	}
+
+	public void rightClickOnGrid(WebElement gridEle, WebElement ContextEle) throws Exception {
+		Thread.sleep(7000);
+		jse.executeScript("arguments[0].scrollIntoView()", gridEle);
+		wait.until(ExpectedConditions.visibilityOf(gridEle));
+		builder.moveToElement(gridEle).contextClick(gridEle).build().perform();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(ContextEle));
+		ContextEle.click();
+		Thread.sleep(3000);
+	}
+
+	public void doubleClickOnElement(WebElement gridEle) throws Exception {
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(gridEle));
+		jse.executeScript("arguments[0].scrollIntoView()", gridEle);
+		builder.moveToElement(gridEle).doubleClick(gridEle).build().perform();
+		//builder.doubleClick(gridEle).build().perform();
+		/*
+		 * if(gridEle.equals(itemSearchIcon)) {
+		 * 
+		 * builder.doubleClick(gridEle).build().perform(); }
+		 */
+	}
+
+	public void clickOnPreviousTab() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(previousTab));
+		Thread.sleep(2000);
+		jse.executeScript("arguments[0].scrollIntoView()", previousTab);
+		previousTab.click();
+	}
+
+	public void clickOnGurantees() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(guaranteesItem));
+		Thread.sleep(2000);
+		jse.executeScript("arguments[0].scrollIntoView()", guaranteesItem);
+		guaranteesItem.click();
+	}
+
+	
+	
+	
+// All for SCENARIOS:3
+	public void click_On_Validate(WebDriver driver) throws Exception {
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(validate_btn));
+		jse.executeScript("arguments[0].scrollIntoView()", validate_btn);
+		validate_btn.click();
+		Thread.sleep(5000);
+
+	}
+
+	public void clickOninvalidErrorsModelCloseBtn() throws Exception {
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(invalidErrorsModelCloseBtn1));
+		jse.executeScript("arguments[0].scrollIntoView()", invalidErrorsModelCloseBtn1);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(invalidErrorsModelCloseBtn1));
+		invalidErrorsModelCloseBtn1.click();
+
+		wait.until(ExpectedConditions.visibilityOf(closeBTN1));
+		jse.executeScript("arguments[0].scrollIntoView()", closeBTN1);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(closeBTN1));
+		closeBTN1.click();
+
+	}
+
+	public void clickOnHistorySession() throws Exception {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[contains(text(),'History')]")));
+		jse.executeScript("arguments[0].scrollIntoView()", historyItem);
+		wait.until(ExpectedConditions.visibilityOf(historyItem));
+		historyItem.click();
+	}
+
+	public String getLatestHistorydetails() throws Exception {
+		String latestHistoryRecord = null;
+		wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("//div[contains(@eventproxy,'lgHist_IED1_body')]//tr//td[2]/div")));
+		jse.executeScript("arguments[0].scrollIntoView()", lastestActionInHistory);
+		wait.until(ExpectedConditions.visibilityOf(lastestActionInHistory));
+		Thread.sleep(5000);
+		latestHistoryRecord = lastestActionInHistory.getText();
+		return latestHistoryRecord;
+	}
+
+	// All SCENARIOS for 5
+
+	public void searchWithDateFieldsForCreatedDeclaration(String currentDate, String afterDayDate) throws Exception {
+
+		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofMillis(1000)).ignoring(Exception.class);
+		jse = (JavascriptExecutor) driver;
+		builder = new Actions(driver);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.name("searchDeclDateFrom_dateTextField")));
+		jse.executeScript("arguments[0].scrollIntoView()", fromDate);
+		wait.until(ExpectedConditions.visibilityOf(fromDate));
+		fromDate.sendKeys(currentDate);
+		wait.until(ExpectedConditions.visibilityOf(toDate));
+		toDate.sendKeys(afterDayDate);
+		clickOnSearchBtn();
+	}
+
+	public void assertRecordsWithInDateRange(String assertTest) throws Exception {
+		Thread.sleep(10000);
+		wait.until(ExpectedConditions
+				.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath("//tr[@role='listitem']/td[1]/div"))));
+		jse.executeScript("arguments[0].scrollIntoView()", gridFristRowElements.get(0));
+		boolean recordFoundWithText = false;
+		for (WebElement searchEle : gridFristRowElements) {
+			String eleText = searchEle.getText();
+			if (eleText.toLowerCase().contains(assertTest.toLowerCase())) {
+				recordFoundWithText = true;
+			}
+		}
+		Assert.assertTrue(recordFoundWithText,
+				String.format("'%s' record found in serach results with date range", assertTest));
+
+	}
+
+}
