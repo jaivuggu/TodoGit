@@ -1,0 +1,2550 @@
+http://10.20.30.161:1120/customsforcewebservice.asmx?wsdl
+
+Fil
+
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3da14836-1013-4fc1-bbe9-c4be085898ac" activeEnvironment="Default" name="customsforcewebservice" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" defaultScriptLanguage="Groovy" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="001659f7-4d3f-4a11-b23c-3d380d6dcf21" wsaVersion="NONE" name="CustomsForceWebServiceSoap" type="wsdl" bindingName="{http://www.customsware.com/service/CustomsForceWebService}CustomsForceWebServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://10.20.30.161:1120/customsforcewebservice.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.20.30.161:1120/customsforcewebservice.asmx?wsdl"><con:part><con:url>http://10.20.30.161:1120/customsforcewebservice.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.customsware.com/service/CustomsForceWebService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.customsware.com/service/CustomsForceWebService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.customsware.com/service/CustomsForceWebService">
+      <s:element name="LoginStart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginStartResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginStartResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginSubmit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginSubmitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginSubmitResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogOutResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFormResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchFilter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchFilterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchFilterResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSearchFilter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSearchFilterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetSearchFilterResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSearchFilter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSearchFilterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSearchFilterResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchFilterList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchFilterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchFilterListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchTemplateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSearchTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSearchTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetSearchTemplateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSearchTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSearchTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSearchTemplateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchTemplateList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchTemplateListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchTemplateListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuHdr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuHdrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuHdrResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuHdr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuHdrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMenuHdrResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuHdr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuHdrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteMenuHdrResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuHdrList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuHdrListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuHdrListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuItemResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMenuItemResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteMenuItemResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuItemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuItemListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuLinkResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMenuLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMenuLinkResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteMenuLinkResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuLinkList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuLinkListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMenuLinkListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFormCacheResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFormCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFormCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetFormCacheResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFormCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFormCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteFormCacheResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormCacheList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormCacheListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFormCacheListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecAPI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecAPIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecAPIResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginStartSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginStart"/>
+  </wsdl:message>
+  <wsdl:message name="LoginStartSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginStartResponse"/>
+  </wsdl:message>
+  <wsdl:message name="LoginSubmitSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginSubmit"/>
+  </wsdl:message>
+  <wsdl:message name="LoginSubmitSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginSubmitResponse"/>
+  </wsdl:message>
+  <wsdl:message name="LogOutSoapIn">
+    <wsdl:part name="parameters" element="tns:LogOut"/>
+  </wsdl:message>
+  <wsdl:message name="LogOutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogOutResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormSoapIn">
+    <wsdl:part name="parameters" element="tns:GetForm"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFormResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchFilterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchFilter"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchFilterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchFilterResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetSearchFilterSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSearchFilter"/>
+  </wsdl:message>
+  <wsdl:message name="SetSearchFilterSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSearchFilterResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSearchFilterSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSearchFilter"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSearchFilterSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSearchFilterResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchFilterListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchFilterList"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchFilterListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchFilterListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchTemplate"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchTemplateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetSearchTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSearchTemplate"/>
+  </wsdl:message>
+  <wsdl:message name="SetSearchTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSearchTemplateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSearchTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSearchTemplate"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSearchTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSearchTemplateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchTemplateListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchTemplateList"/>
+  </wsdl:message>
+  <wsdl:message name="GetSearchTemplateListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchTemplateListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuHdrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuHdr"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuHdrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuHdrResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuHdrSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMenuHdr"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuHdrSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMenuHdrResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuHdrSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMenuHdr"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuHdrSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMenuHdrResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuHdrListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuHdrList"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuHdrListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuHdrListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuItem"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuItemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMenuItem"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMenuItemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuItemSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMenuItem"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuItemSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMenuItemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuItemList"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuItemListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuLink"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuLinkResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMenuLink"/>
+  </wsdl:message>
+  <wsdl:message name="SetMenuLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMenuLinkResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMenuLink"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMenuLinkResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuLinkListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuLinkList"/>
+  </wsdl:message>
+  <wsdl:message name="GetMenuLinkListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuLinkListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFormCache"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFormCacheResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetFormCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:SetFormCache"/>
+  </wsdl:message>
+  <wsdl:message name="SetFormCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:SetFormCacheResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteFormCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFormCache"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteFormCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFormCacheResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormCacheListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFormCacheList"/>
+  </wsdl:message>
+  <wsdl:message name="GetFormCacheListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFormCacheListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExecAPISoapIn">
+    <wsdl:part name="parameters" element="tns:ExecAPI"/>
+  </wsdl:message>
+  <wsdl:message name="ExecAPISoapOut">
+    <wsdl:part name="parameters" element="tns:ExecAPIResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="CustomsForceWebServiceSoap">
+    <wsdl:operation name="LoginStart">
+      <wsdl:input message="tns:LoginStartSoapIn"/>
+      <wsdl:output message="tns:LoginStartSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSubmit">
+      <wsdl:input message="tns:LoginSubmitSoapIn"/>
+      <wsdl:output message="tns:LoginSubmitSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <wsdl:input message="tns:LogOutSoapIn"/>
+      <wsdl:output message="tns:LogOutSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetForm">
+      <wsdl:input message="tns:GetFormSoapIn"/>
+      <wsdl:output message="tns:GetFormSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilter">
+      <wsdl:input message="tns:GetSearchFilterSoapIn"/>
+      <wsdl:output message="tns:GetSearchFilterSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchFilter">
+      <wsdl:input message="tns:SetSearchFilterSoapIn"/>
+      <wsdl:output message="tns:SetSearchFilterSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchFilter">
+      <wsdl:input message="tns:DeleteSearchFilterSoapIn"/>
+      <wsdl:output message="tns:DeleteSearchFilterSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilterList">
+      <wsdl:input message="tns:GetSearchFilterListSoapIn"/>
+      <wsdl:output message="tns:GetSearchFilterListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplate">
+      <wsdl:input message="tns:GetSearchTemplateSoapIn"/>
+      <wsdl:output message="tns:GetSearchTemplateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchTemplate">
+      <wsdl:input message="tns:SetSearchTemplateSoapIn"/>
+      <wsdl:output message="tns:SetSearchTemplateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchTemplate">
+      <wsdl:input message="tns:DeleteSearchTemplateSoapIn"/>
+      <wsdl:output message="tns:DeleteSearchTemplateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplateList">
+      <wsdl:input message="tns:GetSearchTemplateListSoapIn"/>
+      <wsdl:output message="tns:GetSearchTemplateListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdr">
+      <wsdl:input message="tns:GetMenuHdrSoapIn"/>
+      <wsdl:output message="tns:GetMenuHdrSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuHdr">
+      <wsdl:input message="tns:SetMenuHdrSoapIn"/>
+      <wsdl:output message="tns:SetMenuHdrSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuHdr">
+      <wsdl:input message="tns:DeleteMenuHdrSoapIn"/>
+      <wsdl:output message="tns:DeleteMenuHdrSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdrList">
+      <wsdl:input message="tns:GetMenuHdrListSoapIn"/>
+      <wsdl:output message="tns:GetMenuHdrListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItem">
+      <wsdl:input message="tns:GetMenuItemSoapIn"/>
+      <wsdl:output message="tns:GetMenuItemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuItem">
+      <wsdl:input message="tns:SetMenuItemSoapIn"/>
+      <wsdl:output message="tns:SetMenuItemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuItem">
+      <wsdl:input message="tns:DeleteMenuItemSoapIn"/>
+      <wsdl:output message="tns:DeleteMenuItemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItemList">
+      <wsdl:input message="tns:GetMenuItemListSoapIn"/>
+      <wsdl:output message="tns:GetMenuItemListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLink">
+      <wsdl:input message="tns:GetMenuLinkSoapIn"/>
+      <wsdl:output message="tns:GetMenuLinkSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuLink">
+      <wsdl:input message="tns:SetMenuLinkSoapIn"/>
+      <wsdl:output message="tns:SetMenuLinkSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuLink">
+      <wsdl:input message="tns:DeleteMenuLinkSoapIn"/>
+      <wsdl:output message="tns:DeleteMenuLinkSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLinkList">
+      <wsdl:input message="tns:GetMenuLinkListSoapIn"/>
+      <wsdl:output message="tns:GetMenuLinkListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCache">
+      <wsdl:input message="tns:GetFormCacheSoapIn"/>
+      <wsdl:output message="tns:GetFormCacheSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetFormCache">
+      <wsdl:input message="tns:SetFormCacheSoapIn"/>
+      <wsdl:output message="tns:SetFormCacheSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFormCache">
+      <wsdl:input message="tns:DeleteFormCacheSoapIn"/>
+      <wsdl:output message="tns:DeleteFormCacheSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCacheList">
+      <wsdl:input message="tns:GetFormCacheListSoapIn"/>
+      <wsdl:output message="tns:GetFormCacheListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecAPI">
+      <wsdl:input message="tns:ExecAPISoapIn"/>
+      <wsdl:output message="tns:ExecAPISoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomsForceWebServiceSoap" type="tns:CustomsForceWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="LoginStart">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LoginStart" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSubmit">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LoginSubmit" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LogOut" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetForm">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetForm" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilter">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchFilter">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchFilter">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilterList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilterList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplate">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchTemplate">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchTemplate">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplateList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplateList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdr">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuHdr">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuHdr">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdrList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdrList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItem">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuItem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuItem">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuItem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuItem">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuItem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItemList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuItemList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLink">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuLink" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuLink">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuLink" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuLink">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuLink" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLinkList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuLinkList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCache">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetFormCache" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFormCache">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetFormCache" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFormCache">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteFormCache" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCacheList">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetFormCacheList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecAPI">
+      <soap:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/ExecAPI" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CustomsForceWebServiceSoap12" type="tns:CustomsForceWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="LoginStart">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LoginStart" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSubmit">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LoginSubmit" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/LogOut" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetForm">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetForm" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilter">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchFilter">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchFilter">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchFilter" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchFilterList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilterList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplate">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSearchTemplate">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSearchTemplate">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchTemplate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchTemplateList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplateList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdr">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuHdr">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuHdr">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuHdr" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuHdrList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdrList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItem">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuItem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuItem">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuItem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuItem">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuItem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuItemList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuItemList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLink">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuLink" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMenuLink">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetMenuLink" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenuLink">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuLink" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLinkList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetMenuLinkList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCache">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetFormCache" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFormCache">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/SetFormCache" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFormCache">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/DeleteFormCache" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormCacheList">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/GetFormCacheList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecAPI">
+      <soap12:operation soapAction="http://www.customsware.com/service/CustomsForceWebService/ExecAPI" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CustomsForceWebService">
+    <wsdl:port name="CustomsForceWebServiceSoap" binding="tns:CustomsForceWebServiceSoap">
+      <soap:address location="http://10.20.30.161:1120/customsforcewebservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CustomsForceWebServiceSoap12" binding="tns:CustomsForceWebServiceSoap12">
+      <soap12:address location="http://10.20.30.161:1120/customsforcewebservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint></con:endpoints><con:operation id="b977db17-e293-4063-9cb8-b4767766b4be" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteFormCache" name="DeleteFormCache" bindingOperationName="DeleteFormCache" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="781407ed-5f01-4e6f-989c-c60cea6216dd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteFormCache>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteFormCache>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteFormCache"/></con:call></con:operation><con:operation id="83a7d1e7-7d2d-418d-98fd-1a526de0a9d7" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuHdr" name="DeleteMenuHdr" bindingOperationName="DeleteMenuHdr" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fa65056c-e2ad-4177-84ba-ceeb62411391" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteMenuHdr>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteMenuHdr>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuHdr"/></con:call></con:operation><con:operation id="de85d233-c97c-43ba-a2e9-c4261b9135f2" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuItem" name="DeleteMenuItem" bindingOperationName="DeleteMenuItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="057ab07e-2036-4352-a80e-4b521780e9cf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteMenuItem>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteMenuItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuItem"/></con:call></con:operation><con:operation id="48d2d6be-bc31-431a-9865-4be8af513ea4" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuLink" name="DeleteMenuLink" bindingOperationName="DeleteMenuLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f28c06a3-dc3c-4925-a028-d68ce84c3c9f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteMenuLink>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteMenuLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteMenuLink"/></con:call></con:operation><con:operation id="e57b9cc0-fb35-44ae-bb63-d90ca8cc07a8" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchFilter" name="DeleteSearchFilter" bindingOperationName="DeleteSearchFilter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b00e1eb2-9f95-4daa-9f83-fcaf3b594375" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteSearchFilter>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteSearchFilter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchFilter"/></con:call></con:operation><con:operation id="1d07c846-7d24-4143-864d-d7e4360deb18" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchTemplate" name="DeleteSearchTemplate" bindingOperationName="DeleteSearchTemplate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8c5b6da4-b7af-42ce-a9fd-317657e707ef" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:DeleteSearchTemplate>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:DeleteSearchTemplate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/DeleteSearchTemplate"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="fff48fda-6824-4e4e-bcca-4e196a04d4da" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/ExecAPI" name="ExecAPI" bindingOperationName="ExecAPI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4933c049-c5ad-4bd4-b3a0-173cecfb2698" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">
+	<soap:Header/>
+	<soap:Body>
+		<cus:ExecAPI>
+			<!--Optional:-->
+			<cus:request>
+				<CustomsForceServiceRequest>
+          <MessageHeader>
+            <SecurityToken>
+              <UserName>a</UserName>
+              <Password>a</Password>
+              <ApplicationId>SoapUI</ApplicationId>
+              <Company>COMP1 IE</Company>
+​
+            </SecurityToken>
+						<SessionInfo/>
+					</MessageHeader>
+					<MessageBody>
+						<RequestGlobalData/>
+						<RequestList>
+							<RequestItem>
+								<ClientReference>ExecAPI</ClientReference>
+								<DataList>
+									<DataItem>
+​
+
+<InputDocument Version="5.17">
+  <DeclarationList>
+    <Declaration Command="DEFAULT" Version="5.17">
+      <DeclarationHeader>
+        <DeclarationType>DEIMDVZA</DeclarationType>
+        <Jurisdiction>DE</Jurisdiction>
+        <CWProcedure>IMPORT</CWProcedure>
+        <DeclarationDestination>CUSTOMSWAREDE</DeclarationDestination>
+        <DocumentRef>ABTEST_DEIMDVZA</DocumentRef>
+        <SiteID>STR</SiteID>
+        <AccountCode>G0484047</AccountCode>
+        <Reference RefCode="MWB">
+          <RefText>000-07052018</RefText>
+        </Reference>
+		<Reference RefCode="EIR">
+          <RefText>EIR_TEST</RefText>
+        </Reference>
+        <Reference RefCode="KEY">
+          <RefText>KEY_TEST</RefText>
+        </Reference>
+        <Reference RefCode="CAR">
+          <RefText>2570282162</RefText>
+        </Reference>
+        <Reference RefCode="COM">
+          <RefText>COM_TEST</RefText>
+        </Reference>
+        <Reference RefCode="SRC">
+          <RefText>SRC_TEST</RefText>
+        </Reference>
+        <Reference RefCode="TRV">
+          <RefText>2019-05-03 11:37:04</RefText>
+        </Reference>
+        <Reference RefCode="CAS">
+          <RefText />
+        </Reference>
+        <Reference RefCode="HWB">
+          <RefText />
+        </Reference>
+        <Reference RefCode="UCR">
+          <RefText />
+        </Reference>
+        <Country CodeType="NUM" CountryType="Destination">DE</Country>
+        <Country CodeType="NUM" CountryType="Dispatch">US</Country>
+        <Country CodeType="NUM" CountryType="Origin">US</Country>
+        <Port PortType="Origin">ORF</Port>
+        <Party PartyType="Consignor">
+          <NameAddress>
+            <Name>NA</Name>
+            <Address1 />
+            <Address2 />
+            <Country CodeType="NUM" CountryType="Consignor" />
+          </NameAddress>
+          <Reference RefCode="REG">
+            <RefText>2</RefText>
+          </Reference>
+        </Party>
+        <Party PartyType="Consignee">
+          <NameAddress>
+            <AddressID>G0667210</AddressID>
+          </NameAddress>
+        </Party>
+        <Party PartyType="Declarant">
+          <NameAddress>
+            <AddressID>0100057</AddressID>
+          </NameAddress>
+        </Party>
+        <Party PartyType="Importer">
+          <NameAddress>
+            <AddressID>G0667210</AddressID>
+          </NameAddress>
+        </Party>
+        <DeclarationInfo>
+          <DeclarationSubType />
+        </DeclarationInfo>
+        <Measure UOMCode="DocumentGrossWeight">
+          <UOMValue>21007.000</UOMValue>
+        </Measure>
+        <Measure UOMCode="DocumentNetWeight">
+          <UOMValue>18906.3000</UOMValue>
+        </Measure>
+        <Measure UOMCode="DocumentPackages">
+          <UOMValue>26</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="DocumentCost">
+          <AmountValue>0</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context" />
+        </ValueAmount>
+        <Container>
+          <ContainerItem>
+            <ContainerRef>GLDU7106989</ContainerRef>
+          </ContainerItem>
+        </Container>
+        <TransactionNature>1</TransactionNature>
+        <Transport TransportType="Border">
+          <TPIdentifier>MSCU00816</TPIdentifier>
+          <TPMode>4</TPMode>
+          <ConveyanceDate>0001-01-01</ConveyanceDate>
+          <ConveyanceNat CodeType="ISO" />
+        </Transport>
+        <Transport TransportType="Inland">
+          <TPIdentifier>TRUCK</TPIdentifier>
+          <TPMode>3</TPMode>
+        </Transport>
+        <Itinerary ItineraryType="Routing">
+          <Country>US</Country>
+          <Country>DE</Country>
+        </Itinerary>
+        <Office OfficeType="ENT">
+          <OfficeCode>DE000000</OfficeCode>
+        </Office>
+        <Office OfficeType="ENL">
+          <OfficeCode />
+        </Office>
+        <TransportDocument>
+          <TPDocumentNo>000-07052018</TPDocumentNo>
+          <TPDocumentType>4</TPDocumentType>
+          <Package>
+            <PackageCode>PC</PackageCode>
+            <PackageMarks />
+            <PackageQuantity>26</PackageQuantity>
+          </Package>
+        </TransportDocument>
+        <Location LocationType="GoodsLocation">
+          <LocationCode>WOLVERINE PFLEDELBACH</LocationCode>
+        </Location>
+      </DeclarationHeader>
+    </Declaration>
+  </DeclarationList>
+  <CommercialDocumentList>
+    <CommercialDocument Command="UPDATE" Version="5.17">
+      <CommercialDocumentHeader>
+        <DocumentRef>ABTEST_DEIMDVZA</DocumentRef>
+        <DocumentDate>2017-01-11</DocumentDate>
+        <DocumentType>INVOICE</DocumentType>
+        <DocumentSubType>SIMPLE</DocumentSubType>
+        <ConsignmentReference>ABTEST_DEIMDVZA</ConsignmentReference>
+        <AccountCode>G0484047</AccountCode>
+        <SiteID>STR</SiteID>
+        <Reference RefCode="KEY">
+          <RefText>STR9002209</RefText>
+        </Reference>
+        <Country CodeType="NUM" CountryType="Origin">US</Country>
+        <Party PartyType="Buyer">
+          <NameAddress>
+            <AddressID>G0667210</AddressID>
+          </NameAddress>
+        </Party>
+        <Measure UOMCode="DocumentGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="DocumentNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="DocumentValue">
+          <AmountValue>246361.85786000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <Terms>
+          <TermsCode>EXW</TermsCode>
+          <TermsPlace />
+        </Terms>
+        <WorkFlow Command="AggregateDeclaration">
+          <WorkFlowItem>DEIMDVZA</WorkFlowItem>
+        </WorkFlow>
+      </CommercialDocumentHeader>
+      <CommercialDocumentItem>
+        <ItemNo>1</ItemNo>
+        <PartCode>99EX-USBH-2</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">CABLEKIT,EU,99EXUSBH</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8504408210            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">326.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>6.99270000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>2</ItemNo>
+        <PartCode>6510GPB1233E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6510,WW,5603SR,28K,ET,CE6,512X1G,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">6.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>2.36682000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>3</ItemNo>
+        <PartCode>6110GP91132E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6110,AB,4313,28K,SC,512,WEH6.5,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">1.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>35500.00000000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>4</ItemNo>
+        <PartCode>6110GPB1133E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6110,WW,5603SR,28K,ST,CE6,512,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">20.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>7.80720000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>5</ItemNo>
+        <PartCode>6510GPB1233E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6510,WW,5603SR,28K,ET,CE6,512X1G,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">20.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>7.88940000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>6</ItemNo>
+        <PartCode>5100B011111E00</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">5100,BAT,5300SR,28K,ST,64MB,CE5,E,NT,H</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">4.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>83428.00000000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>7</ItemNo>
+        <PartCode>50112788-001FRE</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">FRE,PCBA,MAINBD,D6500WP_BPWM_TRULY</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471500000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">2.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>31842.00000000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>8</ItemNo>
+        <PartCode>50112788-001FRE</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">FRE,PCBA,MAINBD,D6500WP_BPWM_TRULY</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471500000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">14.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>2.22894000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>9</ItemNo>
+        <PartCode>50112788-001FRE</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">FRE,PCBA,MAINBD,D6500WP_BPWM_TRULY</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471500000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">4.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>63684.00000000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>10</ItemNo>
+        <PartCode>50112788-001FRE</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">FRE,PCBA,MAINBD,D6500WP_BPWM_TRULY</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471500000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">2.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>31842.00000000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>11</ItemNo>
+        <PartCode>6110GPB1132E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6110,AB,5603SR,28K,SC,512,WEH6.5,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">40.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>13.82440000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>12</ItemNo>
+        <PartCode>6110GPB1132E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6110,AB,5603SR,28K,SC,512,WEH6.5,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">40.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>13.82440000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>13</ItemNo>
+        <PartCode>6510GPB1233E0H</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">6510,WW,5603SR,28K,ET,CE6,512X1G,EN,H,SW</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8471300000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">20.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>7.88940000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+      <CommercialDocumentItem>
+        <ItemNo>14</ItemNo>
+        <PartCode>50112787-001FRE</PartCode>
+        <PartDescription>
+          <DescriptionText LangCode="EN">FRE,PCBA,MAINBD,D6500WP_BPCE_TRULY</DescriptionText>
+        </PartDescription>
+        <ItemCCN>8517620000            </ItemCCN>
+        <Country CodeType="NUM" CountryType="Origin">CN</Country>
+        <Measure UOMCode="LineGrossWeight">
+          <UOMValue>0.00</UOMValue>
+        </Measure>
+        <Measure UOMCode="LineNetWeight">
+          <UOMValue>0.0</UOMValue>
+        </Measure>
+        <Measure UOMCode="LinePieces">
+          <UOMValue UOMBase="PCS">20.000</UOMValue>
+        </Measure>
+        <ValueAmount ValueType="LineValue">
+          <AmountValue>3.03460000</AmountValue>
+          <Currency CodeType="NUM" CurrencyType="Context">USD</Currency>
+        </ValueAmount>
+        <ValuationMethod>1</ValuationMethod>
+        <Preference>100</Preference>
+        <Procedure>
+          <ProcedureReq>00</ProcedureReq>
+          <ProcedurePrev>00</ProcedurePrev>
+        </Procedure>
+        <Eccn />
+      </CommercialDocumentItem>
+    </CommercialDocument>
+  </CommercialDocumentList>
+</InputDocument>
+
+
+
+
+
+
+
+
+
+
+ 								
+									</DataItem>
+									
+								</DataList>
+							</RequestItem>
+						</RequestList>
+					</MessageBody>
+				</CustomsForceServiceRequest>
+			</cus:request>
+		</cus:ExecAPI>
+	</soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/ExecAPI"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f2ca0aa6-8730-4067-840e-48bc72ed053e" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetForm" name="GetForm" bindingOperationName="GetForm" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8e54b92e-265c-4b8a-ba33-bf6b1a60f092" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetForm>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetForm>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetForm"/></con:call></con:operation><con:operation id="ea53cb13-a424-4158-8449-6edb2458fac8" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetFormCache" name="GetFormCache" bindingOperationName="GetFormCache" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="af0dcb57-9485-40f7-b755-132f91de9b86" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetFormCache>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetFormCache>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetFormCache"/></con:call></con:operation><con:operation id="3b84fdc6-f6c8-43f5-9c47-db734ba1870f" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetFormCacheList" name="GetFormCacheList" bindingOperationName="GetFormCacheList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2dca9302-9727-471f-9336-8723df51981e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetFormCacheList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetFormCacheList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetFormCacheList"/></con:call></con:operation><con:operation id="2e122c64-341a-44dd-8f09-939d15f81a0a" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdr" name="GetMenuHdr" bindingOperationName="GetMenuHdr" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3ddc504c-60ee-4262-8a93-b16cd7b89731" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuHdr>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuHdr>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdr"/></con:call></con:operation><con:operation id="a4c2edc8-410a-49b4-94f0-5c539d0d5b6e" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdrList" name="GetMenuHdrList" bindingOperationName="GetMenuHdrList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="999878e4-16a4-4330-8dea-62d30837aac0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuHdrList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuHdrList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuHdrList"/></con:call></con:operation><con:operation id="c654f7f5-8ca8-4107-b1b4-17b9fc6ef735" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuItem" name="GetMenuItem" bindingOperationName="GetMenuItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ed876fcd-23a3-420c-8e64-96fccd3e6111" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuItem>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuItem"/></con:call></con:operation><con:operation id="fa58415a-2d45-4e86-aaaa-8abbdfbf9eff" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuItemList" name="GetMenuItemList" bindingOperationName="GetMenuItemList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f14abb4e-9c2f-4fcd-b78d-4dd1eb9b8e36" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuItemList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuItemList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuItemList"/></con:call></con:operation><con:operation id="38d142b7-3e94-483e-a206-7fe89fac6042" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuLink" name="GetMenuLink" bindingOperationName="GetMenuLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b55a94f4-f8f4-4c73-accd-8c0565e8a384" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuLink>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuLink"/></con:call></con:operation><con:operation id="991f28c9-8921-48b7-ac75-42d605495fcf" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuLinkList" name="GetMenuLinkList" bindingOperationName="GetMenuLinkList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e42710ae-9fe7-460d-ab6b-c0b3ecfea008" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetMenuLinkList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetMenuLinkList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetMenuLinkList"/></con:call></con:operation><con:operation id="7d0ceb2e-6cbb-4fdf-84e6-9f3d72b58b41" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilter" name="GetSearchFilter" bindingOperationName="GetSearchFilter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="80263c5a-575d-4013-af2e-ec04527ba8a8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetSearchFilter>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetSearchFilter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilter"/></con:call></con:operation><con:operation id="f8f26c2e-a995-4f46-9a42-552f80384b04" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilterList" name="GetSearchFilterList" bindingOperationName="GetSearchFilterList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5e2d5cd5-abdf-4deb-8780-68d11c5734c5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetSearchFilterList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetSearchFilterList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchFilterList"/></con:call></con:operation><con:operation id="88a14c2e-df58-4351-b050-fbd5ffe5347c" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplate" name="GetSearchTemplate" bindingOperationName="GetSearchTemplate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1cb5b918-e19c-4d82-9b79-5287a8d64a31" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetSearchTemplate>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetSearchTemplate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplate"/></con:call></con:operation><con:operation id="9a0d7f16-892b-4f20-9d86-30a3b36608d8" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplateList" name="GetSearchTemplateList" bindingOperationName="GetSearchTemplateList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4e3d2a45-92f4-47f5-8ff1-57e44be46073" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:GetSearchTemplateList>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:GetSearchTemplateList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/GetSearchTemplateList"/></con:call></con:operation><con:operation id="1c18a9c8-be6d-4277-bbe7-e3930b7ebc13" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/LoginStart" name="LoginStart" bindingOperationName="LoginStart" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="94cb29a8-8aaf-43df-aa3f-fb6bb73586c1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:LoginStart>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:LoginStart>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/LoginStart"/></con:call></con:operation><con:operation id="85c07d95-b3ff-4b6e-a568-6b09368b93a6" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/LoginSubmit" name="LoginSubmit" bindingOperationName="LoginSubmit" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="22019679-3263-4d9d-9f91-6a2f0108e47a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:LoginSubmit>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:LoginSubmit>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/LoginSubmit"/></con:call></con:operation><con:operation id="0c5aba24-1a38-4ff7-83ee-a35c5a852c56" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/LogOut" name="LogOut" bindingOperationName="LogOut" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1c09f93a-fa65-4ecd-a8b4-e89b21eddd36" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:LogOut>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:LogOut>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/LogOut"/></con:call></con:operation><con:operation id="11eb6c96-02b8-44f2-b813-e5159d302168" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetFormCache" name="SetFormCache" bindingOperationName="SetFormCache" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4b2386fc-8318-4b0a-b45b-15056cf2ed71" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetFormCache>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetFormCache>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetFormCache"/></con:call></con:operation><con:operation id="ced28630-1abb-4255-9247-7f1114cffcdb" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuHdr" name="SetMenuHdr" bindingOperationName="SetMenuHdr" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="79317d99-16d5-4f88-b05e-1c3f4bd16cbb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetMenuHdr>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetMenuHdr>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuHdr"/></con:call></con:operation><con:operation id="35f2e894-c401-4bdc-bcca-af6267a5654c" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuItem" name="SetMenuItem" bindingOperationName="SetMenuItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="be419bce-88cc-4385-adff-2f9a5f49efc9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetMenuItem>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetMenuItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuItem"/></con:call></con:operation><con:operation id="676fe8fd-f666-4623-8a15-bf958a0e3b2e" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuLink" name="SetMenuLink" bindingOperationName="SetMenuLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7b502345-cffc-4dd5-bfe1-01200c3dac1e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetMenuLink>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetMenuLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetMenuLink"/></con:call></con:operation><con:operation id="fdd78741-5d9b-47b1-a1ce-13e0874a36e1" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetSearchFilter" name="SetSearchFilter" bindingOperationName="SetSearchFilter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d5892ea8-4368-4c99-a937-8861055e3c32" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetSearchFilter>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetSearchFilter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetSearchFilter"/></con:call></con:operation><con:operation id="3e7d24ae-5530-485d-800a-b4dd5eb5b53e" isOneWay="false" action="http://www.customsware.com/service/CustomsForceWebService/SetSearchTemplate" name="SetSearchTemplate" bindingOperationName="SetSearchTemplate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e1cacadf-17ca-4e24-a5db-6a929f5c6efa" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.20.30.161:1120/customsforcewebservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customsware.com/service/CustomsForceWebService">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <cus:SetSearchTemplate>\r
+         <!--Optional:-->\r
+         <cus:request>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </cus:request>\r
+      </cus:SetSearchTemplate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.customsware.com/service/CustomsForceWebService/SetSearchTemplate"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
