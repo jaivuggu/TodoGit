@@ -1,0 +1,171 @@
+<InputDocument>
+    <DeclarationList>
+        <Declaration Command="DEFAULT" Version="5.17">
+            <DeclarationHeader>
+                <DeclarationType>DEIMDVZA</DeclarationType>
+                <Jurisdiction>DE</Jurisdiction>
+                <CWProcedure>IMPORT</CWProcedure>
+                <DeclarationDestination>CUSTOMSWAREDE</DeclarationDestination>
+                <DocumentRef>ABM-063589</DocumentRef>
+                <Reference RefCode="MWB">
+                    <RefText>HDMUBUWB2270493</RefText>
+                </Reference>
+                <Reference RefCode="KEY">
+                    <RefText>STR0121</RefText>
+                </Reference>
+                <Reference RefCode="CAR">
+                    <RefText>ABM-063589</RefText>
+                </Reference>
+                <Reference RefCode="COM">
+                    <RefText>TEST_GEO_CALL_HS3</RefText>
+                </Reference>
+                <Reference RefCode="SRC">
+                    <RefText>ECUS</RefText>
+                </Reference>
+                <Reference RefCode="TRV">
+                    <RefText>1</RefText>
+                </Reference>
+                <Reference RefCode="CAS">
+                    <RefText>HDMUBUWB2270493</RefText>
+                </Reference>
+                <Reference RefCode="HWB">
+                    <RefText>HDMUBUWB2270493</RefText>
+                </Reference>
+                <Reference RefCode="UCR">
+                    <RefText>HDMUBUWB2270493</RefText>
+                </Reference>
+                <Country CodeType="NUM" CountryType="Destination">DE</Country>
+                <Country CodeType="NUM" CountryType="Dispatch">DE</Country>
+                <Port PortType="Origin">BUS</Port>
+                <Party PartyType="Consignee">
+                    <NameAddress>
+                        <Name>Test Post Code</Name>
+                        <PostCode>1234567890</PostCode>
+                    </NameAddress>
+                </Party>
+                <DeclarationInfo>
+                    <DeclarationType>IM</DeclarationType>
+                    <DeclarationSubType>A</DeclarationSubType>
+                </DeclarationInfo>
+                <Measure UOMCode="DocumentGrossWeight">
+                    <UOMValue UOMBase="">8250</UOMValue>
+                </Measure>
+                <Measure UOMCode="DocumentNetWeight">
+                    <UOMValue UOMBase="">7625</UOMValue>
+                </Measure>
+                <Measure UOMCode="DocumentPackages">
+                    <UOMValue UOMBase="">22</UOMValue>
+                </Measure>
+                <DeclarationDate DateType="DateArrivalCom">
+                    <DateTime>2019-06-15</DateTime>
+                </DeclarationDate>
+                <DeclarationDate DateType="DateArrivalNat">
+                    <DateTime>2019-06-15</DateTime>
+                </DeclarationDate>
+                <Container>
+                    <ContainerItem>
+                        <ContainerRef>TRLU8835662</ContainerRef>
+                        <ContainerSealNumber>190364510</ContainerSealNumber>
+                    </ContainerItem>
+                </Container>
+                <TransactionNature>11</TransactionNature>
+                <Transport TransportType="Border">
+                    <TPIdentifier>HYUNDAI GRACE</TPIdentifier>
+                    <TPMode>1</TPMode>
+                    <ConveyanceNat CodeType="ISO">MH</ConveyanceNat>
+                </Transport>
+                <Transport TransportType="Inland">
+                    <TPMode>1</TPMode>
+                </Transport>
+                <Office OfficeType="ENT">
+                    <OfficeCode>DE004851</OfficeCode>
+                </Office>
+                <Office OfficeType="ENL">
+                    <OfficeCode>DE004851</OfficeCode>
+                </Office>
+                <TransportDocument>
+                    <TPDocumentNo>HDMUBUWB2270493</TPDocumentNo>
+                    <Package>
+                        <PackageCode>PC</PackageCode>
+                        <PackageMarks>HDMUBUWB2270493</PackageMarks>
+                        <PackageQuantity>22</PackageQuantity>
+                    </Package>
+                </TransportDocument>
+                <Payment PaymentType="Declaration">
+                    <PaymentMode>E</PaymentMode>
+                </Payment>
+                <Location LocationType="GoodsLocation"/>
+                <Qualifier QualifierType="ValueDetails">
+                    <QualifierCode>0</QualifierCode>
+                </Qualifier>
+            </DeclarationHeader>
+        </Declaration>
+    </DeclarationList>
+    <CommercialDocumentList>
+        <CommercialDocument Command="UPDATE" Version="5.17">
+            <CommercialDocumentHeader>
+                <DocumentRef>ABM-063589_2</DocumentRef>
+                <DocumentDate>2019-05-09</DocumentDate>
+                <DocumentType>INVOICE</DocumentType>
+                <DocumentSubType>SIMPLE</DocumentSubType>
+                <ConsignmentReference>ABM-063589</ConsignmentReference>
+                <Country CodeType="NUM" CountryType="Origin">KR</Country>
+                <Measure UOMCode="DocumentGrossWeight">
+                    <UOMValue UOMBase="">8250</UOMValue>
+                </Measure>
+                <Measure UOMCode="DocumentNetWeight">
+                    <UOMValue UOMBase="">7625</UOMValue>
+                </Measure>
+                <ValueAmount ValueType="DocumentValue">
+                    <AmountValue>36491.6</AmountValue>
+                    <Currency CodeType="NUM" CurrencyType="Context">EUR</Currency>
+                </ValueAmount>
+                <Terms>
+                    <TermsCode>DAP</TermsCode>
+                    <TermsPlace>OBERSTENFELD</TermsPlace>
+                </Terms>
+                <WorkFlow Command="AggregateDeclaration">
+                    <WorkFlowItem>DEIMDVZA</WorkFlowItem>
+                </WorkFlow>
+            </CommercialDocumentHeader>
+            <CommercialDocumentItem>
+                <ItemNo>1</ItemNo>
+                <PartCode>SLEEVE</PartCode>
+                <PartDescription>
+                    <DescriptionText LangCode="EN">Zubeh&#xF6;rteile f&#xFC;r KFZ-Synchrongetriebe Schiebemuffen aus Stahl vorgedreht</DescriptionText>
+                </PartDescription>
+                <ItemCCN>1234567890123456789012</ItemCCN>
+                <Country CodeType="NUM" CountryType="Origin">KR</Country>
+                <Measure UOMCode="LineGrossWeight">
+                    <UOMValue UOMBase="">8250</UOMValue>
+                </Measure>
+                <Measure UOMCode="LineNetWeight">
+                    <UOMValue UOMBase="">7625</UOMValue>
+                </Measure>
+                <Measure UOMCode="LinePieces">
+                    <UOMValue UOMBase="PCS">22</UOMValue>
+                </Measure>
+                <ValueAmount ValueType="LineValue">
+                    <AmountValue>36491.6</AmountValue>
+                    <Currency CodeType="NUM" CurrencyType="Context">EUR</Currency>
+                </ValueAmount>
+                <PreviousEntry>
+                    <PreviousDocType>X</PreviousDocType>
+                    <PreviousDocCode>190</PreviousDocCode>
+                    <PreviousDocReference>ATB150000000000004851</PreviousDocReference>
+                    <PreviousDocLine>1</PreviousDocLine>
+                </PreviousEntry>
+                <ValuationMethod>1</ValuationMethod>
+                <Preference>300</Preference>
+                <Procedure>
+                    <ProcedureReq>40</ProcedureReq>
+                    <ProcedurePrev>00</ProcedurePrev>
+                </Procedure>
+                <Qualifier QualifierType="TAX">
+                    <QualifierCode>VAT</QualifierCode>
+                    <QualifierValue>S</QualifierValue>
+                </Qualifier>
+            </CommercialDocumentItem>
+        </CommercialDocument>
+    </CommercialDocumentList>
+</InputDocument>
